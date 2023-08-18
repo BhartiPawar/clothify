@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "proxy": "http://localhost:5000",
+  "homepage": "https://clothify-tnie.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
