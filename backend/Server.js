@@ -27,9 +27,7 @@ app.use('/api/users', userRouter);
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
-app.get('/', (req, res) => {
-  res.send('Connected to server');
-});
+
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.get('*', (req, res) =>
