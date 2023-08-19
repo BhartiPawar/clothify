@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import SigninScreen from './screen/SigninScreen';
 import SignupScreen from './screen/SignupScreen';
+import HomeScreen from './screen/HomeScreen';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <main>
           <Container className="mt-3">
             <Routes>
-              <Route path="/" element={<SigninScreen />} />
+              <Route path="/" element={<HomeScreen />} />
+              <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SignupScreen />} />
             </Routes>
           </Container>
